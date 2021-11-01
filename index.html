@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- agregar las etiquetas metas -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <title>Practica DOM</title>
-</head>
-<body>
-    <h1>prueba</h1>
+  </head>
+  <body>
+    <main>
+      <section class="bg-dark container-fluid py-4">
+        <article class="container text-light">
+          <h1 class="display-4" id="titulo">Practica de DOM</h1>
+          <p>
+            En este proyecto practicaremos usando herramintas para acceder al
+            DOM
+          </p>
+          <button
+            class="btn btn-primary"
+            id="btnCambiar"
+            onclick="cambiarTitulo()"
+          >
+            Cambiar
+          </button>
+        </article>
+      </section>
+      <section class="container my-5">
+        <h2>Algun articulo</h2>
+        <div id='articulo'>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            iure, blanditiis consequatur placeat error consectetur rem maxime
+            animi ipsum laborum, architecto laudantium eum repellat, nostrum
+            consequuntur doloremque a reprehenderit obcaecati. Nihil enim
+            perspiciatis magni ullam consequuntur quod eos esse iure.
+          </p>
+        </div>
+        <button class="btn btn-primary" onclick="verMas()" id='btnVerMas'>Ver mas</button>
+      </section>
+    </main>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
